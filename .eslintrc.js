@@ -7,7 +7,13 @@ module.exports = {
     sourceType: 'module'
   },
   env: {
-    browser: true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
+  },
+  globals: {
+    "jquery": 1
   },
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
   extends: 'standard',

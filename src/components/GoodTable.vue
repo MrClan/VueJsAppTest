@@ -1,6 +1,8 @@
 /* eslint-disable */
 <template>
   <div>
+    <h1>Test Text</h1>
+    <mappy text="SUB TEXT"></mappy>
     <vue-good-table
       title="Demo Table"
       :columns="columns"
@@ -12,6 +14,7 @@
  
 <script>
 /* eslint-disable */
+import Mappy from '../plugins/MapPlugin'
 export default {
   name: 'test',
   data(){
@@ -67,5 +70,6 @@ export default {
       ],
     };
   },
+  components: { Mappy }
 };
 </script> 
